@@ -14,8 +14,9 @@ var a=document.getElementById("text_a").value;
 if (a=="null1")
   {
 document.getElementById("answer").innerHTML="Correct, Redirecting in 5 seconds";
-setTimeout(5000)
+setTimeout(function() {
 location.replace('https://1.mikeinsike.com');
+},5000)
 }
 else if (a=="null2")
   {

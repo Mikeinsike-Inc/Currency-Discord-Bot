@@ -13,21 +13,8 @@ var a=document.getElementById("text_a").value;
 
 if (a=="null1")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting in 5 seconds";
+document.getElementById("answer").innerHTML="Correct, Redirecting in 5 seconds, NEXT PASSWORD NEEDED = 8374";
 setTimeout(function() {
-document.getElementById("answer").innerHTML="Redirecting in 4 seconds";
-setTimeout(function() {
-document.getElementById("answer").innerHTML="Redirecting in 3 seconds";
-setTimeout(function() {
-document.getElementById("answer").innerHTML="Redirecting in 2 seconds";
-setTimeout(function() {
-document.getElementById("answer").innerHTML="Redirecting in 1 second";
-setTimeout(function() {
-document.getElementById("answer").innerHTML="Redirecting...";
 location.replace('https://1.mikeinsike.com');
-},1000)
-},1000)
-},1000)
-},1000)
-},1000)
+},5000)
 }

@@ -5,21 +5,23 @@
 
 <script>
 
-Attributes attrs = dirContext.getAttributes("pws.mikeinsike.com", new String[] { "TXT" });
-Attribute txt = attrs.get("TXT");
-NamingEnumeration e = txt.getAll();
-while (e.hasMore()) {
-     System.out.println(e.next());
+
   
 function myFunction()
 {
-var pwd=e.next()
+var pwd1="null1"
+var pwd2="null2"
 var a=document.getElementById("text_a").value;
 
-if (a=pwd)
+if (a=pwd1)
   {
 document.getElementById("answer").innerHTML="Correct, Redirecting";
-location.replace('https://tycr-web.mikeinsike.com/1984/8736/dp');
+location.replace('https://1.mikeinsike.com');
+}
+else if (a=pwd2)
+  {
+document.getElementById("answer").innerHTML="Correct, Redirecting";
+location.replace('https://2.mikeinsike.com');
 }
 else
   {

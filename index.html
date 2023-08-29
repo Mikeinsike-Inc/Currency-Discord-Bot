@@ -15,17 +15,19 @@ if (a=="null1")
   {
 document.getElementById("answer").innerHTML="Correct, Redirecting in 5 seconds";
 setTimeout(function() {
+document.getElementById("answer").innerHTML="Redirecting in 4 seconds";
+setTimeout(function() {
+document.getElementById("answer").innerHTML="Redirecting in 3 seconds";
+setTimeout(function() {
+document.getElementById("answer").innerHTML="Redirecting in 2 seconds";
+setTimeout(function() {
+document.getElementById("answer").innerHTML="Redirecting in 1 second";
+setTimeout(function() {
+document.getElementById("answer").innerHTML="Redirecting...";
 location.replace('https://1.mikeinsike.com');
-},5000)
+},1000)
+},1000)
+},1000)
+},1000)
+},1000)
 }
-else if (a=="null2")
-  {
-document.getElementById("answer").innerHTML="Correct, Redirecting";
-location.replace('https://2.mikeinsike.com');
-}
-else
-  {
-document.getElementById("answer").innerHTML="Incorrect!";
-  }
-}
-</script>

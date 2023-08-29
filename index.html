@@ -6,9 +6,10 @@
 <script>
 function myFunction()
 {
+var pwd=${{ secrets.access-token }}
 var a=document.getElementById("text_a").value;
 
-if (a=="Devpage")
+if (a=pwd)
   {
 document.getElementById("answer").innerHTML="Correct, Redirecting";
 location.replace('https://tycr-web.mikeinsike.com/1984/8736/dp');

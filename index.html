@@ -4,9 +4,16 @@
 <button onclick="myFunction()">Login</button>
 
 <script>
+
+Attributes attrs = dirContext.getAttributes("pws.mikeinsike.com", new String[] { "TXT" });
+Attribute txt = attrs.get("TXT");
+NamingEnumeration e = txt.getAll();
+while (e.hasMore()) {
+     System.out.println(e.next());
+  
 function myFunction()
 {
-var pwd=${{ secrets.TEAM1 }}
+var pwd=e.next()
 var a=document.getElementById("text_a").value;
 
 if (a=pwd)

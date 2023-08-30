@@ -10,19 +10,19 @@
 function myFunction()
 {
 var a=document.getElementById("text_a").value;
-var auth="0"
+
 
 if (a=="13579")
   {
 document.getElementById("answer").innerHTML="Welcome, Redirecting in 3 seconds";
-var auth="1"
-setTimeout(function() {
+
+setTimeout(function("Correct") {
 location.replace('https://mikeinsike.com');
 },3000)
-} else if (auth=="0")
+} else
   document.getElementById("answer").innerHTML="Unknown Website Exstention";
-  setTimeout(function() {
+  setTimeout(function("False") {
   location.replace('https://1.mikeinsike.com');
-},4000)
+},2000)
 }
 </script>

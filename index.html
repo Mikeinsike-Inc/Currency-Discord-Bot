@@ -11,12 +11,15 @@ function myFunction()
 {
 var a=document.getElementById("text_a").value;
 
-if (a=="null1")
+if (a=="13579")
   {
-document.getElementById("answer").innerHTML="Correct, Redirecting in 5 seconds, NEXT PASSWORD NEEDED = 8374";
+document.getElementById("answer").innerHTML="Welcome, Redirecting in 5 second";
 setTimeout(function() {
-location.replace('https://1.mikeinsike.com');
+location.replace('https://mikeinsike.com');
 },5000)
 } else
   document.getElementById("answer").innerHTML="INVALID!";
+  setTimeout(function() {
+  location.replace('https://1.mikeinsike.com');
+},2000)
 }

@@ -9,8 +9,24 @@
 
 <script>
 
+function zero() {
+location.replace('https://mikeinsike.com');
+}
+function one() {
+location.replace('https://1.mikeinsike.com');
+}
+function two() {
+location.replace('https://tycr-web.mikeinsike.com');
+}
 
-  
+
+
+
+
+
+
+
+
 function myFunction()
 {
 var a=document.getElementById("text_a").value;
@@ -20,27 +36,19 @@ if (a=="0")
   {
 document.getElementById("answer").innerHTML="mikeinsike.com, Redirecting in 3 seconds";
 
-setTimeout(function zero() {
-location.replace('https://mikeinsike.com');
-},3000)
+setTimeout(zero(),3000)
+
 } else if (a=="1")
   {
 document.getElementById("answer").innerHTML="1.mikeinsike.com, Redirecting in 3 seconds";
 
-setTimeout(function one() {
-location.replace('https://1.mikeinsike.com');
-},3000)
+setTimeout(one(),3000)
 } else if (a=="2")
   {
 document.getElementById("answer").innerHTML="tycr-web.mikeinsike.com, Redirecting in 3 seconds";
 
-setTimeout(function two() {
-location.replace('https://tycr-web.mikeinsike.com');
-},3000)
+setTimeout(two(),3000)
 } else
   document.getElementById("answer").innerHTML="Unknown Website Exstention!";
-  setTimeout(function nope() {
-  location.replace('https://1.mikeinsike.com');
-},2000)
 }
 </script>
